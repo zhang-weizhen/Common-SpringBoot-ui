@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2263aa"],{e889:function(t,n,s){"use strict";s.r(n),s.d(n,"useOptionLogApi",(function(){return o}));var e=s("b775");function o(){return{list:t=>Object(e["default"])({url:"/sys/log/list",method:"get",params:t}),loginList:t=>Object(e["default"])({url:"/sys/log/loginList",method:"get",params:t})}}}}]);

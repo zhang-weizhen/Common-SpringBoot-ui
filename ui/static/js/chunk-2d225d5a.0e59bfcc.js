@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d225d5a"],{e5a5:function(e,t,n){"use strict";n.r(t),n.d(t,"useCodeGenApi",(function(){return a}));var s=n("b775");function a(){return{list:e=>Object(s["default"])({url:"/sys/gen/list",method:"get",params:e}),create:e=>Object(s["default"])({url:"/sys/gen/create",method:"post",data:e})}}}}]);
