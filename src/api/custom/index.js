@@ -18,21 +18,21 @@ export function useCustomApi() {
 },
 	add: (params) => {
 		return request({
-							url: '/custom/custom/info',
-				method: 'put',
+							url: '/custom/info/save',
+				method: 'post',
 						data: params
 		});
 	},
 	update: (params) => {
 		return request({
-							url: '/custom/custom/info',
+							url: '/custom/info/update',
 				method: 'put',
 						data: params
 		});
 	},
 	delete: (params) => {
 		return request({
-							url: '/custom/custom/info',
+							url: '/custom/info/delete',
 				method: 'delete',
 						data: params
 		});
