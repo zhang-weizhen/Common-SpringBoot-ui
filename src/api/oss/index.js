@@ -1,13 +1,13 @@
 import request from '@/utils/request';
 
 /**
- * 订单管理
+ * 文件存储
  *
  * @author zwz
  * @email 602459150@qq.com
  * @date 2024-10-26 14:10:41
  */
-export function useOrderApi() {
+export function useOssApi() {
 	return {
 		list: (params) => {
 			return request({
@@ -16,9 +16,9 @@ export function useOrderApi() {
 				params
 			});
 		},
-		add: (params) => {
+		upload: (params) => {
 			return request({
-				url: '/order/save',
+				url: '/sys/oss/upload',
 				method: 'post',
 				data: params
 			});
@@ -36,13 +36,6 @@ export function useOrderApi() {
 				method: 'delete',
 				data: params
 			});
-		},
-		userPerformance: (params) => {
-			return request({
-				url: '/order/userPerformance',
-				method: 'post',
-				data: params
-			})
 		}
 	};
 }

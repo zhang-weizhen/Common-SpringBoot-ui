@@ -38,7 +38,14 @@
 					</el-icon>
 					查询
 				</el-button>
-				<el-button size="default" type="success" class="ml10" @click="onOpenAddOrEdit('add')">
+				<!-- <el-button size="default" type="success" class="ml10" @click="onOpenAddOrEdit('add')">
+					<el-icon>
+						<ele-FolderAdd />
+					</el-icon>
+					新增
+				</el-button> -->
+
+				<el-button size="default" type="success" class="ml10" @click="toNewOrder()">
 					<el-icon>
 						<ele-FolderAdd />
 					</el-icon>
@@ -476,6 +483,9 @@ export default {
 		};
 	},
 	methods: {
+		toNewOrder() {
+			this.$router.push('newOrder');
+		},
 		fetchData() {
 			this.state.ruleForm = {};
 			this.state.tableData.loading = true;
